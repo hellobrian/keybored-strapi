@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "switches",
+  "info": {
+    "name": "Switches",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "linear",
+        "tactile",
+        "clicky"
+      ]
+    },
+    "pins": {
+      "type": "enumeration",
+      "enum": [
+        "three",
+        "five"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "want",
+        "purchased",
+        "shipped",
+        "delivered"
+      ]
+    }
+  }
+}

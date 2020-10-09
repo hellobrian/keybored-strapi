@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keycaps",
+  "info": {
+    "name": "keycaps",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "want",
+        "purchased",
+        "shipped",
+        "delivered"
+      ]
+    },
+    "profile": {
+      "type": "enumeration",
+      "enum": [
+        "dsa",
+        "sa",
+        "cherry",
+        "oem",
+        "mt3",
+        "kat"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "novelties": {
+      "collection": "novelties"
+    }
+  }
+}

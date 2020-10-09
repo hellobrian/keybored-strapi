@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyboards",
+  "info": {
+    "name": "keyboards",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pins": {
+      "type": "enumeration",
+      "enum": [
+        "three",
+        "five"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "TKL",
+        "HHKB",
+        "sixty",
+        "sixtyFive",
+        "seventyFive"
+      ]
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "want",
+        "purchased",
+        "shipped",
+        "delivered"
+      ]
+    },
+    "mac": {
+      "type": "boolean",
+      "default": false
+    },
+    "linux": {
+      "type": "boolean",
+      "default": false
+    },
+    "windows": {
+      "type": "boolean",
+      "default": false
+    },
+    "VIA": {
+      "type": "boolean",
+      "default": false
+    },
+    "sockets": {
+      "type": "enumeration",
+      "enum": [
+        "hotswap",
+        "soldered"
+      ]
+    },
+    "switch": {
+      "model": "switches"
+    }
+  }
+}

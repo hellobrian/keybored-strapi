@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/novelties",
+      "handler": "novelties.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/novelties/count",
+      "handler": "novelties.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/novelties/:id",
+      "handler": "novelties.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/novelties",
+      "handler": "novelties.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/novelties/:id",
+      "handler": "novelties.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/novelties/:id",
+      "handler": "novelties.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
